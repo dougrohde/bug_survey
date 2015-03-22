@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reason: 1
+  reported_by: 1
+  severity: 1
+  fix_duration: 1
+  organization_id: 1
+
+two:
+  reason: 1
+  reported_by: 1
+  severity: 1
+  fix_duration: 1
+  organization_id: 1

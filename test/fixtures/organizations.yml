@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_size: 1
+  company_developers: 1
+  team_developers: 1
+  dedicated_qa: false
+  qa_team_size: 1
+  software_channels: MyString
+  languages: MyString
+  has_spec: false
+  spec_tool: MyString
+  has_pm_tool: false
+  pm_tool: MyString
+  qa_process: MyString
+
+two:
+  company_size: 1
+  company_developers: 1
+  team_developers: 1
+  dedicated_qa: false
+  qa_team_size: 1
+  software_channels: MyString
+  languages: MyString
+  has_spec: false
+  spec_tool: MyString
+  has_pm_tool: false
+  pm_tool: MyString
+  qa_process: MyString
