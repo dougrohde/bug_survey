@@ -1,0 +1,62 @@
+<%= form_for @organization, url: {action: "create"} do |f| %>
+  <p>How many people work in your company?<br/>
+    <%= f.text_field :company_size %>
+  </p>
+  <p>How many developers work in your company?<br/>
+    <%= f.text_field :company_developers %>
+  </p>
+  <p>How many developers work on your team? Include only those that will be participating in this survey.<br/>
+    <%= f.text_field :team_developers %>
+  </p>
+  <p>Do you have a dedicated QA team?<br/>
+    <%= f.radio_button :dedicated_qa, true %>
+    <%= label :dedicated_qa_true, 'Yes' %><br/>
+    <%= f.radio_button :dedicated_qa, false %>
+    <%= label :dedicated_qa_false, 'No' %>
+  </p>
+  <p>If 'Yes' above, how many dedicated QA testers work on your team? Include only those that will be participating in this survey.<br?>
+    <%= f.text_field :qa_team_size %>
+  </p>
+  <p>What channels do you use to deliver software. For example: Web, desktop, native mobile, etc. Include only those methods used by the team participating in this survey.<br?>
+    <%= f.text_field :software_channels %>
+  </p>
+  <p>How often do you routinely deliver your software?<br?>
+    <%= f.radio_button :deployment_frequency, 'daily'%>
+    <%= label :deployment_frequency_daily, 'Daily'%>
+    <%= f.radio_button :deployment_frequency, 'weekly'%>
+    <%= label :deployment_frequency_biweekly, 'Weekly'%>
+    <%= f.radio_button :deployment_frequency, 'biweekly'%>
+    <%= label :deployment_frequency_biweekly, 'Bi-weekly'%>
+    <%= f.radio_button :deployment_frequency, 'Monthly'%>
+    <%= label :deployment_frequency_monthly, 'Monthly'%>
+    <%= f.radio_button :deployment_frequency, 'monthly_plus'%>
+    <%= label :deployment_frequency_monthly_plus, 'Less than once a month'%>
+  </p>
+  <p>What programming languages do your team primarily use? Include only those used by the team participating in this survey.<br/>
+    <%= f.text_field :languages %>
+  </p>
+  <p>Do you have a spec? Do not include story-based tools like Jira, Pivotal Tracker, etc.<br/>
+    <%= f.radio_button :has_spec, true %>
+    <%= label :has_spec_true, 'Yes' %><br/>
+    <%= f.radio_button :has_spec, false %>
+    <%= label :has_spec_false, 'No' %>
+  </p>
+  <p>If you have a spec, is it kept up-to-date? That is, does the currently deployed application match the specification?<br/>
+    <%= f.radio_button :has_spec, true %>
+    <%= label :has_spec_true, 'Yes' %><br/>
+    <%= f.radio_button :has_spec, false %>
+    <%= label :has_spec_false, 'No' %>
+  </p>
+  <p>If you have a spec, which tool(s) do you use?<br/>
+    <%= f.text_field :spec_tool %>
+  </p>
+  <p>Do you use any project management tools, such as Jira, Pivotal Tracker, etc?<br/>
+    <%= f.radio_button :has_pm_tool, true %>
+    <%= label :has_pm_tool_true, 'Yes' %><br/>
+    <%= f.radio_button :has_pm_tool, false %>
+    <%= label :has_pm_tool_false, 'No' %>
+  </p>
+  <p>If you use a project management tool, which tool(s) do you use?<br/>
+    <%= f.text_field :pm_tool %>
+  </p>
+<% end %>

@@ -8,6 +8,7 @@ default: &default
   adapter: postgresql
   database: bug_survey_development
   host: localhost
+  port: 5432
   pool: 5
   timeout: 5000
   
